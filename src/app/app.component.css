@@ -1,0 +1,19 @@
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 56px;
+    width: 200px;
+    padding-top: 20px;
+    background-color: #f8f9fa;
+}
+.left-sidebar {
+    left: 0;
+}
+.right-sidebar {
+    right: 0;
+}
+.content {
+    margin-left: 220px;
+    margin-right: 220px;
+    padding: 20px;
+}
