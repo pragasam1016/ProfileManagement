@@ -9,6 +9,7 @@
 <div class="sidebar left-sidebar">
   <ul class="nav flex-column">
       <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="userprofilelink">Profile</a></li>
       <li class="nav-item"><a class="nav-link" href="#">About</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
   </ul>
@@ -27,9 +28,31 @@
 <div class="content">
   <h2>Welcome to My Website</h2>
   <p>This is a simple Bootstrap template with a header, sidebars, and a footer.</p>
-  <app-home></app-home>
-  <app-home></app-home>
-  <app-home></app-home>
+ 
+<router-outlet></router-outlet>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr *ngFor="let user of profileDetails">
+      <th scope="row"></th>
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.address}}</td>
+      <td>{{user.email}}</td>
+    </tr>
+  
+
+  </tbody>
+</table>
 
 </div>
 
