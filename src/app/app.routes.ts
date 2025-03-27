@@ -6,6 +6,9 @@ import { NoutfoundComponent } from './noutfound/noutfound.component';
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
-    { path: 'userprofilelink', component: UserprofileComponent },
+    { path: 'moses', component: UserprofileComponent },
     {path: '**', component:NoutfoundComponent}
 ];
+// expect const routes: Routes = [
+//     {path: 'userprofilelink', component: UserprofileComponent},
+// ];
